@@ -7,7 +7,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "biome", "eslint", "ts_ls", "tailwindcss" },
+        ensure_installed = { "lua_ls", "biome", "eslint", "ts_ls", "tailwindcss", "gopls" },
         automatic_installation = true,
       })
     end
@@ -67,7 +67,7 @@ return {
       local capabilities = require('blink.cmp').get_lsp_capabilities()
 
 
-      local servers = { "lua_ls", "biome", "eslint", "ts_ls", "tailwindcss" }
+      local servers = { "lua_ls", "biome", "eslint", "ts_ls", "tailwindcss", "gopls" }
 
       for _, server in ipairs(servers) do
         lspconfig[server].setup({
