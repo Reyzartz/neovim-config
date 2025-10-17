@@ -6,7 +6,7 @@ return {
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
     opts = {
-      keymap = { preset = 'super-tab' },
+      keymap = { preset = 'enter' },
 
       appearance = {
         use_nvim_cmp_as_default = true,
