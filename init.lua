@@ -22,7 +22,6 @@ vim.keymap.set('n', 'grn', vim.lsp.buf.rename)
 vim.keymap.set('n', 'gra', vim.lsp.buf.code_action)
 vim.keymap.set('n', 'grr', vim.lsp.buf.references)
 
-
 -- TERMINAL COMMANDS
 vim.keymap.set('n', '<space>to', function()
   vim.cmd.new()
@@ -52,11 +51,10 @@ end, {
   desc = "Open window in a new window horizontally",
 })
 
-
 -- Keymap to trigger the function
 vim.keymap.set('n', '<Leader>d', function()
   local bufnr = vim.api.nvim_create_buf(false, true) -- Create an empty buffer
-  local width = 120                                   -- Set the width of the floating window
+  local width = 120                                  -- Set the width of the floating window
   local height = 40                                  -- Set the height of the floating window
 
   -- Get the current window dimensions

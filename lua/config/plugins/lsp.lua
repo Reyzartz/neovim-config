@@ -51,7 +51,7 @@ return {
         vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, opts)
 
         -- command to format the whole buffer
-        vim.keymap.set("n", "<leader>cf", vim.lsp.buf.format, opts)
+        vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, opts)
 
         -- Format on save
         if client.server_capabilities.documentFormattingProvider then
